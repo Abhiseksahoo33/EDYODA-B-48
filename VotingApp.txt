@@ -24,3 +24,19 @@ redis-868d64d78-lw2r6     1/1     Running       0          41m
 result-5d57b59f4b-vp7rl   1/1     Running       2          41m
 vote-94849dc97-xq5rt      1/1     Running       0          41m
 worker-dd46d7584-8mcdk    1/1     Running       2          41m
+
+
+Commands Used
+~~~~~~~~~~~~~
+kubectl get po  => 
+	NAME                      READY   STATUS    RESTARTS   AGE
+	db-b54cd94f4-h8n6n        1/1     Running   0          58m
+	redis-868d64d78-lw2r6     1/1     Running   0          98m
+	result-5d57b59f4b-vp7rl   1/1     Running   3          98m
+	vote-94849dc97-xq5rt      1/1     Running   0          98m
+	worker-dd46d7584-8mcdk    1/1     Running   3          98m
+
+kubectl delete po worker-dd46d7584-8mcdk =>
+	pod "worker-dd46d7584-8mcdk" deleted
+
+kubectl logs db-b54cd94f4-h8n6n  => See logs of that pod
