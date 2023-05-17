@@ -1,3 +1,0 @@
-# Write a common use-case, where you will use a daemon set instead of replica set?
-=> We can use demon set in log level, when we need to collect logs from each Nodes.
-
